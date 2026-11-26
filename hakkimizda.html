@@ -5,13 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#111820" />
 
+    <!-- PRIMARY SEO -->
     <title data-i18n="about.pageTitle">Hakkımızda | Söğüt Otogar Taksi</title>
 
     <meta
       name="description"
       content="Söğüt Otogar Taksi ve Levent Şakrak hakkında bilgi alın. Söğüt, Bilecik ve Eskişehir çevresinde 7/24 taksi hizmeti."
+      data-i18n-meta="about.description"
     />
 
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta name="author" content="Söğüt Otogar Taksi" />
+
+    <link rel="canonical" href="https://sogutotogartaksi.com/hakkimizda.html" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Söğüt Otogar Taksi" />
+
+    <meta
+      property="og:title"
+      content="Hakkımızda | Söğüt Otogar Taksi"
+      data-i18n-meta="about.pageTitle"
+    />
+
+    <meta
+      property="og:description"
+      content="Söğüt ve çevresinde 7/24 taksi hizmeti. Söğüt Otogar Taksi hakkında bilgi alın."
+      data-i18n-meta="about.description"
+    />
+
+    <meta
+      property="og:url"
+      content="https://sogutotogartaksi.com/hakkimizda.html"
+    />
+
+    <meta
+      property="og:image"
+      content="https://sogutotogartaksi.com/assets/images/hero-taxi.webp"
+    />
+
+    <meta property="og:image:alt" content="Söğüt Otogar Taksi aracı" />
+
+    <!-- TWITTER / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="Hakkımızda | Söğüt Otogar Taksi"
+      data-i18n-meta="about.pageTitle"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Söğüt, Bilecik ve Eskişehir çevresinde 7/24 taksi hizmeti."
+      data-i18n-meta="about.description"
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://sogutotogartaksi.com/assets/images/hero-taxi.webp"
+    />
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Hakkımızda | Söğüt Otogar Taksi",
+        "url": "https://sogutotogartaksi.com/hakkimizda.html",
+        "description": "Söğüt Otogar Taksi hakkında bilgiler ve hizmet bölgeleri.",
+        "inLanguage": "tr",
+        "mainEntity": {
+          "@type": "LocalBusiness",
+          "name": "Söğüt Otogar Taksi",
+          "url": "https://sogutotogartaksi.com/",
+          "telephone": "+905435625383",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Türkmenbaşı, Eskişehir Cd.",
+            "addressLocality": "Söğüt",
+            "addressRegion": "Bilecik",
+            "postalCode": "11600",
+            "addressCountry": "TR"
+          }
+        }
+      }
+    </script>
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -20,10 +104,12 @@
       rel="stylesheet"
     />
 
+    <!-- STYLES -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pages.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
+    <!-- MAIN JAVASCRIPT -->
     <script src="js/main.js" defer></script>
   </head>
 
@@ -42,15 +128,17 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container header-inner">
-        <a href="index.html" class="brand">
+        <a href="/" class="brand" aria-label="Söğüt Otogar Taksi ana sayfa">
           <span class="brand-icon">S<span>.</span></span>
 
           <span class="brand-text">
             <strong>SÖĞÜT OTOGAR</strong>
-            <small>TAKSİ HİZMETLERİ</small>
+
+            <small data-i18n="common.service"> TAKSİ HİZMETLERİ </small>
           </span>
         </a>
 
+        <!-- MOBILE MENU -->
         <button
           class="menu-toggle"
           type="button"
@@ -62,10 +150,13 @@
           <span></span>
         </button>
 
-        <nav class="navigation">
-          <a href="index.html" data-i18n="nav.home"> Ana Sayfa </a>
+        <!-- NAVIGATION -->
+        <nav class="navigation" aria-label="Ana menü">
+          <a href="/" data-i18n="nav.home"> Ana Sayfa </a>
 
-          <a href="hakkimizda.html" data-i18n="nav.about"> Hakkımızda </a>
+          <a href="hakkimizda.html" data-i18n="nav.about" aria-current="page">
+            Hakkımızda
+          </a>
 
           <a href="hizmetlerimiz.html" data-i18n="nav.services">
             Hizmetlerimiz
@@ -76,19 +167,41 @@
           <a href="iletisim.html" data-i18n="nav.contact"> İletişim </a>
         </nav>
 
-        <div class="language-switcher">
-          <button class="lang-btn active" data-lang="tr" type="button">
+        <!-- LANGUAGE SWITCHER -->
+        <div class="language-switcher" aria-label="Dil seçimi">
+          <button
+            class="lang-btn active"
+            data-lang="tr"
+            type="button"
+            aria-label="Türkçe"
+            aria-pressed="true"
+          >
             TR
           </button>
 
-          <button class="lang-btn" data-lang="en" type="button">EN</button>
+          <button
+            class="lang-btn"
+            data-lang="en"
+            type="button"
+            aria-label="English"
+            aria-pressed="false"
+          >
+            EN
+          </button>
 
-          <button class="lang-btn" data-lang="ru" type="button">RU</button>
+          <button
+            class="lang-btn"
+            data-lang="ru"
+            type="button"
+            aria-label="Русский"
+            aria-pressed="false"
+          >
+            RU
+          </button>
         </div>
 
-        <a href="tel:+905435625383" class="header-call">
-          <span>☎</span>
-          <span data-i18n="nav.call">TAKSİ ÇAĞIR</span>
+        <a href="tel:+905435625383" class="header-call" data-i18n="nav.call">
+          TAKSİ ÇAĞIR
         </a>
       </div>
     </header>
@@ -100,12 +213,15 @@
           <div>
             <div class="inner-eyebrow">
               <span></span>
+
               <span data-i18n="about.eyebrow"> SÖĞÜT OTOGAR TAKSİ </span>
             </div>
 
             <h1>
               <span data-i18n="about.titleLine1"> Yolculuğunuzda </span>
+
               <br />
+
               <em data-i18n="about.titleLine2"> yanınızdayız. </em>
             </h1>
 
@@ -115,7 +231,7 @@
             </p>
 
             <div class="inner-breadcrumb">
-              <a href="index.html" data-i18n="nav.home"> Ana Sayfa </a>
+              <a href="/" data-i18n="nav.home"> Ana Sayfa </a>
 
               <span>/</span>
 
@@ -147,7 +263,9 @@
 
             <h2>
               <span data-i18n="about.headingLine1"> Önceliğimiz, </span>
+
               <br />
+
               <em data-i18n="about.headingLine2"> ulaşılabilir olmak. </em>
             </h2>
           </div>
@@ -167,7 +285,8 @@
             </p>
 
             <a href="tel:+905435625383" class="inline-call">
-              <span data-i18n="about.call"> Levent Şakrak’ı ara </span>
+              <span data-i18n="about.call"> Levent Şakrak'ı ara </span>
+
               <span>↗</span>
             </a>
           </div>
@@ -179,16 +298,19 @@
         <div class="container facts-grid">
           <div>
             <strong>24<span>/7</span></strong>
+
             <small data-i18n="about.fact1"> Telefonla ulaşım </small>
           </div>
 
           <div>
             <strong>03</strong>
+
             <small data-i18n="about.fact2"> Hizmet bölgesi </small>
           </div>
 
           <div>
             <strong>01</strong>
+
             <small data-i18n="about.fact3"> Doğrudan iletişim </small>
           </div>
 
@@ -204,12 +326,13 @@
       <div class="container footer-main">
         <!-- FOOTER BRAND -->
         <div class="footer-brand">
-          <a href="index.html" class="brand">
+          <a href="/" class="brand">
             <span class="brand-icon">S<span>.</span></span>
 
             <span class="brand-text">
               <strong>SÖĞÜT OTOGAR</strong>
-              <small>TAKSİ HİZMETLERİ</small>
+
+              <small data-i18n="common.service"> TAKSİ HİZMETLERİ </small>
             </span>
           </a>
 
@@ -266,14 +389,21 @@
         target="_blank"
         rel="noopener noreferrer"
         class="floating-whatsapp"
+        aria-label="WhatsApp ile iletişime geç"
       >
         <span>◉</span>
-        <span data-i18n="common.whatsappShort">WhatsApp</span>
+
+        <span data-i18n="common.whatsappShort"> WhatsApp </span>
       </a>
 
-      <a href="tel:+905435625383" class="floating-call">
+      <a
+        href="tel:+905435625383"
+        class="floating-call"
+        aria-label="Söğüt Otogar Taksi telefon numarasını ara"
+      >
         <span>☎</span>
-        <span data-i18n="common.call">Hemen Ara</span>
+
+        <span data-i18n="common.call"> Hemen Ara </span>
       </a>
     </div>
   </body>

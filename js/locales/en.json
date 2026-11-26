@@ -14,7 +14,7 @@
   "common.hours": "Opening Hours",
   "common.address": "Address",
   "common.addressText": "Türkmenbaşı, Eskişehir Avenue<br>11600 Söğüt / Bilecik",
-  "common.addressPlain": "Türkmenbaşı, Eskişehir Avenue, 11600 Söğüt/Bilecik",
+  "common.addressPlain": "Türkmenbaşı, Eskişehir Avenue, 11600 Söğüt/Bilecik, Türkiye",
   "common.discover": "EXPLORE",
   "common.contact": "CONTACT",
   "common.service": "TAXI SERVICES",
@@ -23,6 +23,9 @@
   "common.location": "SÖĞÜT / BİLECİK / ESKİŞEHİR",
   "common.footer": "Based in Söğüt, we are here for your transportation needs in the surrounding areas.",
 
+  "meta.description": "Söğüt Otogar Taxi provides 24/7 taxi services, bus station transfers and intercity transportation in Söğüt, Bilecik and Eskişehir, Türkiye.",
+
+  "home.pageTitle": "Söğüt Otogar Taxi | 24/7 Taxi & Bus Station Transfers",
   "home.eyebrow": "SÖĞÜT TAXI SERVICE",
   "home.title": "Wherever your journey takes you.",
   "home.title1": "Wherever",

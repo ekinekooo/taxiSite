@@ -12,21 +12,116 @@
     <meta
       name="description"
       content="Söğüt Otogar Taksi'nin hizmet bölgeleri: Söğüt, Bilecik ve Eskişehir."
+      data-i18n-meta="regions.description"
     />
 
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Söğüt Otogar Taksi" />
+
+    <link rel="canonical" href="https://sogutotogartaksi.com/bolgeler.html" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Söğüt Otogar Taksi" />
+
+    <meta
+      property="og:title"
+      content="Çalışma Bölgelerimiz | Söğüt Otogar Taksi"
+      data-i18n-meta="regions.pageTitle"
+    />
+
+    <meta
+      property="og:description"
+      content="Söğüt Otogar Taksi'nin hizmet bölgeleri: Söğüt, Bilecik ve Eskişehir."
+      data-i18n-meta="regions.description"
+    />
+
+    <meta
+      property="og:url"
+      content="https://sogutotogartaksi.com/bolgeler.html"
+    />
+
+    <meta
+      property="og:image"
+      content="https://sogutotogartaksi.com/assets/images/hero-taxi.webp"
+    />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="Çalışma Bölgelerimiz | Söğüt Otogar Taksi"
+      data-i18n-meta="regions.pageTitle"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Söğüt Otogar Taksi'nin hizmet bölgeleri: Söğüt, Bilecik ve Eskişehir."
+      data-i18n-meta="regions.description"
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://sogutotogartaksi.com/assets/images/hero-taxi.webp"
+    />
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pages.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
+    <!-- JAVASCRIPT -->
     <script src="js/main.js" defer></script>
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Söğüt Otogar Taksi Hizmet Bölgeleri",
+        "description": "Söğüt merkezli taksi ulaşım hizmetleri. Söğüt, Bilecik ve Eskişehir yönündeki yolculuk talepleri için iletişim.",
+        "url": "https://sogutotogartaksi.com/bolgeler.html",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Söğüt Otogar Taksi",
+          "url": "https://sogutotogartaksi.com/",
+          "telephone": "+905435625383",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Türkmenbaşı, Eskişehir Cd.",
+            "addressLocality": "Söğüt",
+            "addressRegion": "Bilecik",
+            "postalCode": "11600",
+            "addressCountry": "TR"
+          }
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Söğüt"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Bilecik"
+          },
+          {
+            "@type": "City",
+            "name": "Eskişehir"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -49,7 +144,7 @@
 
           <span class="brand-text">
             <strong>SÖĞÜT OTOGAR</strong>
-            <small>TAKSİ HİZMETLERİ</small>
+            <small data-i18n="common.service">TAKSİ HİZMETLERİ</small>
           </span>
         </a>
 
@@ -64,7 +159,7 @@
           <span></span>
         </button>
 
-        <nav class="navigation">
+        <nav class="navigation" aria-label="Ana menü">
           <a href="index.html" data-i18n="nav.home"> Ana Sayfa </a>
 
           <a href="hakkimizda.html" data-i18n="nav.about"> Hakkımızda </a>
@@ -73,19 +168,43 @@
             Hizmetlerimiz
           </a>
 
-          <a href="bolgeler.html" data-i18n="nav.regions"> Bölgeler </a>
+          <a href="bolgeler.html" data-i18n="nav.regions" aria-current="page">
+            Bölgeler
+          </a>
 
           <a href="iletisim.html" data-i18n="nav.contact"> İletişim </a>
         </nav>
 
         <div class="language-switcher">
-          <button class="lang-btn active" data-lang="tr" type="button">
+          <button
+            class="lang-btn active"
+            data-lang="tr"
+            type="button"
+            aria-label="Türkçe"
+            aria-pressed="true"
+          >
             TR
           </button>
 
-          <button class="lang-btn" data-lang="en" type="button">EN</button>
+          <button
+            class="lang-btn"
+            data-lang="en"
+            type="button"
+            aria-label="English"
+            aria-pressed="false"
+          >
+            EN
+          </button>
 
-          <button class="lang-btn" data-lang="ru" type="button">RU</button>
+          <button
+            class="lang-btn"
+            data-lang="ru"
+            type="button"
+            aria-label="Русский"
+            aria-pressed="false"
+          >
+            RU
+          </button>
         </div>
 
         <a href="tel:+905435625383" class="header-call">
@@ -180,7 +299,10 @@
                 MERKEZ
               </span>
 
-              <a href="tel:+905435625383">
+              <a
+                href="tel:+905435625383"
+                aria-label="Söğüt bölgesi için bilgi al"
+              >
                 <span data-i18n="regions.info">Bilgi al</span>
                 <b>↗</b>
               </a>
@@ -202,7 +324,10 @@
                 ÇEVRE BÖLGE
               </span>
 
-              <a href="tel:+905435625383">
+              <a
+                href="tel:+905435625383"
+                aria-label="Bilecik bölgesi için bilgi al"
+              >
                 <span data-i18n="regions.info">Bilgi al</span>
                 <b>↗</b>
               </a>
@@ -224,7 +349,10 @@
                 ÇEVRE BÖLGE
               </span>
 
-              <a href="tel:+905435625383">
+              <a
+                href="tel:+905435625383"
+                aria-label="Eskişehir bölgesi için bilgi al"
+              >
                 <span data-i18n="regions.info">Bilgi al</span>
                 <b>↗</b>
               </a>
@@ -244,7 +372,7 @@
 
             <span class="brand-text">
               <strong>SÖĞÜT OTOGAR</strong>
-              <small>TAKSİ HİZMETLERİ</small>
+              <small data-i18n="common.service">TAKSİ HİZMETLERİ</small>
             </span>
           </a>
 

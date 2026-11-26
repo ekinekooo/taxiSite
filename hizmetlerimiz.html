@@ -12,8 +12,58 @@
     <meta
       name="description"
       content="Söğüt Otogar Taksi hizmetleri: otogar transferi, şehir içi ve şehirler arası ulaşım."
+      data-i18n-meta="services.description"
     />
 
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Söğüt Otogar Taksi" />
+
+    <link
+      rel="canonical"
+      href="https://sogutotogartaksi.com/hizmetlerimiz.html"
+    />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Söğüt Otogar Taksi" />
+    <meta
+      property="og:title"
+      content="Hizmetlerimiz | Söğüt Otogar Taksi"
+      data-i18n-meta="services.pageTitle"
+    />
+    <meta
+      property="og:description"
+      content="Söğüt Otogar Taksi hizmetleri: otogar transferi, şehir içi ve şehirler arası ulaşım."
+      data-i18n-meta="services.description"
+    />
+    <meta
+      property="og:url"
+      content="https://sogutotogartaksi.com/hizmetlerimiz.html"
+    />
+    <meta
+      property="og:image"
+      content="https://sogutotogartaksi.com/assets/images/hero-taxi.webp"
+    />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Hizmetlerimiz | Söğüt Otogar Taksi"
+      data-i18n-meta="services.pageTitle"
+    />
+    <meta
+      name="twitter:description"
+      content="Söğüt Otogar Taksi hizmetleri: otogar transferi, şehir içi ve şehirler arası ulaşım."
+      data-i18n-meta="services.description"
+    />
+    <meta
+      name="twitter:image"
+      content="https://sogutotogartaksi.com/assets/images/hero-taxi.webp"
+    />
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -22,11 +72,52 @@
       rel="stylesheet"
     />
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pages.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 
+    <!-- JAVASCRIPT -->
     <script src="js/main.js" defer></script>
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Söğüt Otogar Taksi Ulaşım Hizmetleri",
+        "description": "Söğüt ve çevresinde otogar transferi, şehir içi ulaşım, şehirler arası ulaşım ve 7/24 taksi hizmeti.",
+        "url": "https://sogutotogartaksi.com/hizmetlerimiz.html",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Söğüt Otogar Taksi",
+          "telephone": "+905435625383",
+          "url": "https://sogutotogartaksi.com/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Türkmenbaşı, Eskişehir Cd.",
+            "addressLocality": "Söğüt",
+            "addressRegion": "Bilecik",
+            "postalCode": "11600",
+            "addressCountry": "TR"
+          }
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Söğüt"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Bilecik"
+          },
+          {
+            "@type": "City",
+            "name": "Eskişehir"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -49,7 +140,7 @@
 
           <span class="brand-text">
             <strong>SÖĞÜT OTOGAR</strong>
-            <small>TAKSİ HİZMETLERİ</small>
+            <small data-i18n="common.service">TAKSİ HİZMETLERİ</small>
           </span>
         </a>
 
@@ -58,18 +149,23 @@
           type="button"
           aria-label="Menüyü aç"
           aria-expanded="false"
+          data-i18n-aria="common.menuOpen"
         >
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav class="navigation">
+        <nav class="navigation" aria-label="Ana menü">
           <a href="index.html" data-i18n="nav.home"> Ana Sayfa </a>
 
           <a href="hakkimizda.html" data-i18n="nav.about"> Hakkımızda </a>
 
-          <a href="hizmetlerimiz.html" data-i18n="nav.services">
+          <a
+            href="hizmetlerimiz.html"
+            data-i18n="nav.services"
+            aria-current="page"
+          >
             Hizmetlerimiz
           </a>
 
@@ -78,14 +174,36 @@
           <a href="iletisim.html" data-i18n="nav.contact"> İletişim </a>
         </nav>
 
-        <div class="language-switcher">
-          <button class="lang-btn active" data-lang="tr" type="button">
+        <div class="language-switcher" aria-label="Dil seçimi">
+          <button
+            class="lang-btn active"
+            data-lang="tr"
+            type="button"
+            aria-label="Türkçe"
+            aria-pressed="true"
+          >
             TR
           </button>
 
-          <button class="lang-btn" data-lang="en" type="button">EN</button>
+          <button
+            class="lang-btn"
+            data-lang="en"
+            type="button"
+            aria-label="English"
+            aria-pressed="false"
+          >
+            EN
+          </button>
 
-          <button class="lang-btn" data-lang="ru" type="button">RU</button>
+          <button
+            class="lang-btn"
+            data-lang="ru"
+            type="button"
+            aria-label="Русский"
+            aria-pressed="false"
+          >
+            RU
+          </button>
         </div>
 
         <a href="tel:+905435625383" class="header-call">
@@ -265,7 +383,7 @@
 
             <span class="brand-text">
               <strong>SÖĞÜT OTOGAR</strong>
-              <small>TAKSİ HİZMETLERİ</small>
+              <small data-i18n="common.service">TAKSİ HİZMETLERİ</small>
             </span>
           </a>
 
