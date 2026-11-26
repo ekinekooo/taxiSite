@@ -1,4 +1,8 @@
+# Söğüt Otogar Taksi
+# Official website: https://sogutotogartaksi.com/
+
 User-agent: *
 Allow: /
 
+# XML Sitemap
 Sitemap: https://sogutotogartaksi.com/sitemap.xml
