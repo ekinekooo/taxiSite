@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Ana Sayfa -->
+    <url>
+        <loc>https://sogutotogartaksi.com/</loc>
+    </url>
+
+    <!-- Hakkımızda -->
+    <url>
+        <loc>https://sogutotogartaksi.com/hakkimizda</loc>
+    </url>
+
+    <!-- Hizmetlerimiz -->
+    <url>
+        <loc>https://sogutotogartaksi.com/hizmetlerimiz</loc>
+    </url>
+
+    <!-- Çalışma Bölgelerimiz -->
+    <url>
+        <loc>https://sogutotogartaksi.com/bolgeler</loc>
+    </url>
+
+    <!-- İletişim -->
+    <url>
+        <loc>https://sogutotogartaksi.com/iletisim</loc>
+    </url>
+
+</urlset>

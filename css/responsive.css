@@ -1,0 +1,294 @@
+@media (max-width: 1050px) {
+  .navigation {
+    gap: 16px;
+  }
+
+  .navigation a {
+    font-size: 11px;
+  }
+
+  .hero-layout {
+    grid-template-columns: 0.95fr 1.05fr;
+  }
+
+  .hero-visual {
+    margin-right: -35px;
+  }
+
+  .hero-visual img {
+    width: 115%;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    height: 72px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 23px;
+    height: 2px;
+    background: white;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 24px 5%;
+    background: var(--dark-soft);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .navigation.open {
+    display: flex;
+  }
+
+  .header-call {
+    display: none;
+  }
+
+  .hero {
+    padding: 55px 0 45px;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy {
+    padding: 20px 0 10px;
+  }
+
+  .hero-visual {
+    height: 380px;
+    margin: 0;
+  }
+
+  .hero-visual img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .hero-visual::before {
+    width: 350px;
+    height: 350px;
+  }
+
+  .quick-info-inner {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+  }
+
+  .quick-info-title {
+    padding: 15px;
+  }
+
+  .location-item {
+    border-left: 0;
+    border-top: 1px solid rgba(17, 24, 32, 0.2);
+  }
+
+  .section-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-top > p {
+    max-width: 520px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .announcement-inner {
+    min-height: 33px;
+  }
+
+  .announcement-inner > span:nth-child(2) {
+    display: none;
+  }
+
+  .announcement {
+    font-size: 9px;
+  }
+
+  .brand-icon {
+    font-size: 32px;
+  }
+
+  .brand-text strong {
+    font-size: 12px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+    letter-spacing: -2.5px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .hero-buttons {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .button-secondary {
+    margin-left: 3px;
+  }
+
+  .hero-bottom-info {
+    margin-top: 40px;
+  }
+
+  .hero-visual {
+    height: 260px;
+  }
+
+  .hero-visual::before {
+    width: 245px;
+    height: 245px;
+  }
+
+  .visual-label {
+    top: 10px;
+    right: 10px;
+  }
+
+  .visual-caption {
+    bottom: 5px;
+    right: 0;
+    padding: 9px 12px;
+  }
+
+  .quick-info-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .quick-info-title {
+    grid-column: 1 / -1;
+  }
+
+  .location-item {
+    padding: 14px 10px;
+  }
+
+  .services {
+    padding: 70px 0;
+  }
+
+  .section-top h2 {
+    font-size: 35px;
+  }
+
+  .service-row {
+    grid-template-columns: 35px 1fr 25px;
+    gap: 10px;
+    min-height: 78px;
+  }
+
+  .service-name {
+    font-size: 14px;
+  }
+
+  .service-description {
+    display: none;
+  }
+
+  .contact-banner-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-banner h2 {
+    font-size: 30px;
+  }
+
+  .banner-phone {
+    font-size: 16px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .floating-contact {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .floating-contact a {
+    flex: 1;
+    text-align: center;
+    padding: 13px 7px;
+  }
+
+  .footer {
+    padding-bottom: 95px;
+  }
+}
+
+/* MOBİL SABİT İLETİŞİM BUTONLARI */
+@media (max-width: 600px) {
+  .floating-contact {
+    position: fixed;
+    z-index: 999;
+    left: 12px;
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .floating-contact a {
+    flex: 1;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 0 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
